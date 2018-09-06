@@ -8,10 +8,11 @@ end
 
 
 
-##def not_safe?(speed)
-#end
+def not_safe?(speed)
+  not_safe? ? speed > 60 || speed < 40 : speed <= 60 && speed >= 40
+end
 
-not_safe? ? speed > 60 || speed < 40 : speed <= 60 && speed >= 40
+
 	
 
 
